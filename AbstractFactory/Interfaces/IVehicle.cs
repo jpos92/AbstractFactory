@@ -4,6 +4,6 @@ using System.Text;
 
 namespace AbstractFactory.Interfaces {
     public interface IVehicle {
-        string ShowDetails();
+        public string ShowDetails();
     }
 }
