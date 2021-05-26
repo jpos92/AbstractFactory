@@ -20,7 +20,7 @@ namespace AbstractFactory {
             ICustomerVehicleFactory EF = new EnterpriseFactory();
 
             //EF sempre vai retornar clientes e veículos do tipo Enterprise
-            Console.WriteLine(EF.CreateCustomer().GetVehicle(EF.CreateVehicle().ShowDetails()));
+            Console.WriteLine(EF.CreateCustomer().GetVehicle(EF.CreateVehicle()));
             Console.WriteLine();
         }
     }

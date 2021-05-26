@@ -10,8 +10,8 @@ namespace AbstractFactory.Entities {
             return "Cliente do tipo ENTERPRISE";
         }
 
-        public string GetVehicle(string vehicle) {
-            return $"Cliente do tipo ENTERPRISE usando {vehicle}";
+        public string GetVehicle(IVehicle vehicle) {
+            return $"Cliente do tipo ENTERPRISE usando {vehicle.ShowDetails()}";
         }
     }
 }
