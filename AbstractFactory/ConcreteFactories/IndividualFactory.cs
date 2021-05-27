@@ -5,11 +5,11 @@ using AbstractFactory.Interfaces;
 namespace AbstractFactory.ConcreteFactories {
     class IndividualFactory : ICustomerVehicleFactory {
         public ICustomer CreateCustomer() {
-            return new EnterpriseCustomer();
+            return new IndividualCustomer();
         }
 
         public IVehicle CreateVehicle() {
-            return new EnterpriseVehicle();
+            return new IndividualVehicle();
         }
     }
 }
